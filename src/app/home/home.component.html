@@ -1,0 +1,14 @@
+
+<h1>Welcome!</h1>
+
+
+<div class="play-container" [class.active] = "clickCounter > 4">
+    <p>You've clicked <button (click)="countClick()">this</button> {{ clickCounter }} times.</p>
+</div>
+
+<div class="play-container">
+    <p>Type anything: <input type="text" (keyup) = "onKeyPress($event)"></p><br/>
+    <p>Your Name is:  <strong>{{ name }}</strong></p>
+</div>
+
+
